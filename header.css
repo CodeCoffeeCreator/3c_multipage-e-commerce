@@ -246,7 +246,7 @@ form.search button:hover {
 .showmenu .site-off {
   transform: translateX(0);
   visibility: visible;
-  transform: transform 0.4s 0s, visibility 0s 0s;
+  transition: transform 0.4s 0s, visibility 0s 0s;
 }
 
 .off-canvas {
@@ -327,6 +327,10 @@ form.search button:hover {
 
 .off-canvas nav .mega {
   padding: 0;
+}
+
+.off-canvas nav .mega .products {
+  display: none;
 }
 
 .off-canvas nav .mega .icon-small {
