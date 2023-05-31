@@ -13,6 +13,17 @@ function copyMenu() {
 }
 copyMenu();
 
+const menuButton = document.querySelector('.trigger'),
+  closeButton = document.querySelector('.t-close'),
+  addClass = document.querySelector('.site');
+
+menuButton.addEventListener('click', function () {
+  addClass.classList.toggle('showmenu');
+});
+closeButton.addEventListener('click', function () {
+  addClass.classList.remove('showmenu');
+});
+
 const submenu = document.querySelectorAll('.has-child .icon-small');
 submenu.forEach((menu) => menu.addEventListener('click', toggle));
 
