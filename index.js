@@ -34,3 +34,10 @@ function toggle(e) {
     this.closest('.has-child').classList.toggle('expand');
   }
 }
+
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
